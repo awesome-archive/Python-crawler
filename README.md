@@ -1,14 +1,15 @@
 # Python-crawler
 
-从零开始系统化的学习写Python爬虫。 
-主要是记录一下自己写Python爬虫的经过与心得。
-同时也是为了分享一下如何能更高效率的学习写爬虫。
-IDE：Vscode    Python版本: 3.6 
+> 由于代码是比较早之前写的，抓取的网站目录结构可能有所变动   
+> 所以部分代码可能不能使用了，欢迎正在学习爬虫的大家给这个项目**提PR**  
+> 让更多的代码能跑起来~
 
-每天的学习记录都会 同步更新到：
-* 微信公众号： findyourownway
+从零开始系统化的学习写Python爬虫。   
+主要是记录一下自己写Python爬虫的经过与心得。   
+同时也是为了分享一下如何能更高效率的学习写爬虫。    
+IDE：Vscode    Python版本: 3.6   
+
 * 知乎专栏：https://zhuanlan.zhihu.com/Ehco-python
-* blog ： www.ehcoblog.ml
 
 详细学习路径：
 ### 一：Beautiful Soup 爬虫
@@ -37,3 +38,21 @@ IDE：Vscode    Python版本: 3.6
 * Selenium模拟浏览器 https://zhuanlan.zhihu.com/p/27115580
 * 爬虫实践：获取快代理 https://zhuanlan.zhihu.com/p/27150025
 * 爬虫实践：漫画批量下载 https://zhuanlan.zhihu.com/p/27155429
+
+### 四： 练手项目
+
+* 爬虫实践：螺纹钢数据&Cookies https://zhuanlan.zhihu.com/p/27232687
+* 爬虫实践：登录正方教务系统 https://zhuanlan.zhihu.com/p/27256315
+* 爬虫应用： requests+django实现微信公众号后台 https://zhuanlan.zhihu.com/p/27625233
+* 爬虫应用： 12306火车票信息查询 https://zhuanlan.zhihu.com/p/27969976
+* 爬虫应用： 利用斗鱼Api抓取弹幕 https://zhuanlan.zhihu.com/p/28164017
+* 爬虫应用： 获取支付宝账单信息 https://zhuanlan.zhihu.com/p/28537306
+* 爬虫应用：IT之家热门段子（评论）爬取 https://zhuanlan.zhihu.com/p/28806210
+* 爬虫应用：一号店 商品信息查询程序 https://zhuanlan.zhihu.com/p/28982497
+* 爬虫应用：搜狗输入法词库抓取 https://zhuanlan.zhihu.com/p/31186373
+* 爬虫应用：复古网盘游戏抓取 https://zhuanlan.zhihu.com/p/32420131
+* 爬虫应用：自动填写问卷星  https://zhuanlan.zhihu.com/p/36224375
+* 爬虫应用：腾讯漫画下载~  https://zhuanlan.zhihu.com/p/39578774
+
+
+

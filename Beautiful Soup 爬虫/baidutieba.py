@@ -17,7 +17,7 @@ def get_html(url):
         r = requests.get(url, timeout=30)
         r.raise_for_status()
         # 这里我们知道百度贴吧的编码是utf-8，所以手动设置的。爬去其他的页面时建议使用：
-        # r.endcodding = r.apparent_endconding
+        # r.encoding = r.apparent_encoding
         r.encoding = 'utf-8'
         return r.text
     except:
@@ -49,14 +49,7 @@ def get_content(url):
             # 开始筛选信息，并保存到字典中
             comment['title'] = li.find(
                 'a', attrs={'class': 'j_th_tit '}).text.strip()
-            comment['link'] = "http://tieba.baidu.com/" + \
-                li.find('a', attrs={'class': 'j_th_tit '})['href']
-            comment['name'] = li.find(
-                'span', attrs={'class': 'tb_icon_author '}).text.strip()
-            comment['time'] = li.find(
-                'span', attrs={'class': 'pull-right is_show_create_time'}).text.strip()
-            comment['replyNum'] = li.find(
-                'span', attrs={'class': 'threadlist_rep_num center_text'}).text.strip()
+            comment['last_reply_data'] = li.find('span',attrs={'class':'threadlist_reply_date pull_right j_reply_data'}).text.strip()
             comments.append(comment)
         except:
             print('出了点小问题')
@@ -73,7 +66,7 @@ def Out2File(dict):
     with open('TTBT.txt', 'a+') as f:
         for comment in dict:
             f.write('标题： {} \t 链接：{} \t 发帖人：{} \t 发帖时间：{} \t 回复数量： {} \n'.format(
-                comment['title'], comment['link'], comment['name'], comment['time'], comment['replyNum']))
+                comment['title'], comment['last_reply_data']))
 
         print('当前页面爬取完成')
 
